@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Box</title>
+    <style>
+        body{
+            position: relative;
+            background: black;
+        }
+        .box{
+            position: relative;
+            display: flex;
+            min-height: 100vh;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .box span{
+            position: absolute;
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(0,0,0,0.5);
+            box-shadow: 0 0 25px rgba(240, 238, 238, 0.1);
+            animation: animate 5s linear infinite;
+        }
+        @keyframes animate {
+            0%{
+                transform: rotate(0deg);
+                background: rgba(0, 0, 0, 0.5);
+            }
+            10%{
+                background: rgba(230, 168, 168, 0.5);
+            }
+            20%{
+                background: rgba(255, 0, 0, 0.5);
+            }
+            30%{
+                background: rgba(255, 238, 0, 0.5);   
+            }
+            40%{
+                background: rgba(0, 255, 34, 0.699);
+            }
+            50%{
+                background: rgba(79, 11, 240, 0.747);
+            }
+            60%{
+                background: rgba(153, 243, 255, 0.5);
+            }
+            70%{
+                background: rgba(255, 4, 180, 0.5);
+            }
+            80%{
+                background: rgba(255, 159, 159, 0.5);
+            }
+            90%{
+                background: rgba(255, 255, 255, 0.5);
+            }
+            100%{
+                transform: rotate(720deg);
+            }
+        }
+        .box span:nth-child(1){
+            height: 360px;
+            width: 360px;
+            animation-delay: -0.1s;
+        }
+        .box span:nth-child(2){
+            height: 320px;
+            width: 320px;
+            animation-delay: -0.2s;
+        }
+        .box span:nth-child(3){
+            height: 280px;
+            width: 280px;
+            animation-delay: -0.3s;
+        }
+        .box span:nth-child(4){
+            height: 240px;
+            width: 240px;
+            animation-delay: -0.4s;
+        }
+        .box span:nth-child(5){
+            height: 200px;
+            width: 200px;
+            animation-delay: -0.5s;
+        }
+        .box span:nth-child(6){
+            height: 160px;
+            width: 160px;
+            animation-delay: -0.6s;
+        }
+        .box span:nth-child(7){
+            height: 120px;
+            width: 120px;
+            animation-delay: -0.7s;
+        }
+        .box span:nth-child(8){
+            height: 80px;
+            width: 80px;
+            animation-delay: -0.8s;
+        }
+        .box span:nth-child(9){
+            height: 40px;
+            width: 40px;
+            animation-delay: -0.9s;
+        }
+        .box span:nth-child(10){
+            height: 10px;
+            width: 10px;
+            animation-delay: -1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</body>
+</html>
